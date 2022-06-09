@@ -1,4 +1,4 @@
-package org.reshuffle.gabbro;
+package io.github.aliothliu.gabbro;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

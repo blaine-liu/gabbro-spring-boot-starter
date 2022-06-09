@@ -16,7 +16,7 @@ Gabbro是一个基于Spring Boot的JSON响应格式包装器，允许开发者�
 
 ```
 <dependency>
-    <groupId>org.reshuffle.gabbro</groupId>
+    <groupId>io.github.aliothliu</groupId>
     <artifactId>gabbro-spring-boot-starter</artifactId>
     <version>${gabbro.version}</version>
  </dependency>

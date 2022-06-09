@@ -1,4 +1,4 @@
-package org.reshuffle.gabbro.web;
+package io.github.aliothliu.gabbro.web;
 
 import javax.validation.constraints.NotBlank;
 

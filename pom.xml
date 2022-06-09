@@ -8,7 +8,7 @@
         <version>2.7.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>org.reshuffle.gabbro</groupId>
+    <groupId>io.github.aliothliu</groupId>
     <artifactId>gabbro-spring-boot-starter</artifactId>
     <version>0.0.1</version>
     <name>gabbro-spring-boot-starter</name>

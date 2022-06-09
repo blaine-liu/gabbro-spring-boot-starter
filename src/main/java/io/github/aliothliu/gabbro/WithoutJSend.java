@@ -1,4 +1,4 @@
-package org.reshuffle.gabbro;
+package io.github.aliothliu.gabbro;
 
 import java.lang.annotation.*;
 

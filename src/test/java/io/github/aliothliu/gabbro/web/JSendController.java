@@ -1,6 +1,6 @@
-package org.reshuffle.gabbro.web;
+package io.github.aliothliu.gabbro.web;
 
-import org.reshuffle.gabbro.WithoutJSend;
+import io.github.aliothliu.gabbro.WithoutJSend;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;

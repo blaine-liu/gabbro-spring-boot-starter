@@ -1,6 +1,6 @@
-package org.reshuffle.gabbro.web.exception;
+package io.github.aliothliu.gabbro.web.exception;
 
-import org.reshuffle.gabbro.web.jsend.JSend;
+import io.github.aliothliu.gabbro.web.jsend.JSend;
 import org.springframework.core.MethodParameter;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;

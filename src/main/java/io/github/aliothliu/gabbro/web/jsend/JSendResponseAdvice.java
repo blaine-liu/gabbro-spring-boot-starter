@@ -1,8 +1,8 @@
-package org.reshuffle.gabbro.web.jsend;
+package io.github.aliothliu.gabbro.web.jsend;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.reshuffle.gabbro.WithoutJSend;
+import io.github.aliothliu.gabbro.WithoutJSend;
 import org.springframework.core.MethodParameter;
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.core.annotation.Order;

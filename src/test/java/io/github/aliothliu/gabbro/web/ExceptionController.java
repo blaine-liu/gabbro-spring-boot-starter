@@ -1,7 +1,7 @@
-package org.reshuffle.gabbro.web;
+package io.github.aliothliu.gabbro.web;
 
-import org.reshuffle.gabbro.errors.NotFoundException;
-import org.reshuffle.gabbro.errors.OrderNotFoundException;
+import io.github.aliothliu.gabbro.errors.NotFoundException;
+import io.github.aliothliu.gabbro.errors.OrderNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.web.bind.annotation.RequestBody;

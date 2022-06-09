@@ -1,4 +1,4 @@
-package org.reshuffle.gabbro.security;
+package io.github.aliothliu.gabbro.security;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;

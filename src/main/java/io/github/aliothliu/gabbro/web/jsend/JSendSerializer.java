@@ -1,4 +1,4 @@
-package org.reshuffle.gabbro.web.jsend;
+package io.github.aliothliu.gabbro.web.jsend;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;

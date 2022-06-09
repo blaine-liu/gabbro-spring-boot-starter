@@ -1,4 +1,4 @@
-package org.reshuffle.gabbro.errors;
+package io.github.aliothliu.gabbro.errors;
 
 import org.zalando.problem.AbstractThrowableProblem;
 import org.zalando.problem.Status;
