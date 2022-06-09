@@ -97,7 +97,9 @@ public class JSend {
     /**
      * 新建失败响应的JSend对象
      *
-     * @param data 响应内容
+     * @param code    响应代码
+     * @param message 响应消息
+     * @param data    响应内容
      * @return JSend
      * @see JSendStatus#fail
      */
