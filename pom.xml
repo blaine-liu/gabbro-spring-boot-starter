@@ -10,7 +10,7 @@
     </parent>
     <groupId>io.github.aliothliu</groupId>
     <artifactId>gabbro-spring-boot-starter</artifactId>
-    <version>0.0.1-SNAPSHOTS</version>
+    <version>0.0.2-SNAPSHOTS</version>
     <name>gabbro-spring-boot-starter</name>
     <url>https://github.com</url>
     <description>a simple web spring boot starter</description>

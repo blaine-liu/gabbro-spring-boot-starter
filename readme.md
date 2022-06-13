@@ -38,6 +38,12 @@ public class DemoApplication {
 }
 ````
 
+添加``ControllerAdvice``配置
+````
+@ControllerAdvice
+public class JSendResponseAdvice extends GabbroResponseAdvice {}
+````
+
 三、如果项目使用Spring Security，需要配置Spring Security
 
 ````

@@ -1,11 +1,11 @@
-package io.github.aliothliu.gabbro.web.jsend;
+package io.github.aliothliu.gabbro.jsend;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import org.springframework.util.Assert;
 
 import java.util.StringJoiner;
 
-import static io.github.aliothliu.gabbro.web.jsend.JSendStatus.*;
+import static io.github.aliothliu.gabbro.jsend.JSendStatus.*;
 
 /**
  * JSend 对象

@@ -1,4 +1,4 @@
-package io.github.aliothliu.gabbro.web.jsend;
+package io.github.aliothliu.gabbro.jsend;
 
 /**
  * JSend 状态
