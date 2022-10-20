@@ -60,19 +60,26 @@ public class GabbroResponseAdvice implements ProblemHandling, SecurityAdviceTrai
             }
         } else if (body instanceof Problem) {
             Problem problem = (Problem) body;
+
             int statusCode = HttpStatus.INTERNAL_SERVER_ERROR.value();
             String detail = problem.getDetail();
+
             if (Objects.nonNull(problem.getStatus())) {
                 statusCode = problem.getStatus().getStatusCode();
             }
+            Long bizCode = (long) statusCode;
+            if (problem.getStatus() instanceof GabbroStatus) {
+                bizCode = ((GabbroStatus) problem.getStatus()).getBizCode();
+            }
+
             if (statusCode >= HttpStatus.BAD_REQUEST.value() && statusCode < HttpStatus.INTERNAL_SERVER_ERROR.value()) {
                 if (problem instanceof ConstraintViolationProblem) {
                     ConstraintViolationProblem violationProblem = (ConstraintViolationProblem) problem;
                     detail = violationProblem.getViolations().stream().map(Violation::getMessage).distinct().collect(Collectors.joining(","));
                 }
-                return JSend.fail(statusCode, detail, problem.getParameters());
+                return JSend.fail(bizCode, detail, problem.getParameters());
             }
-            return JSend.error(statusCode, detail, problem.getParameters());
+            return JSend.error(bizCode, detail, problem.getParameters());
         }
 
         return JSend.success(body);

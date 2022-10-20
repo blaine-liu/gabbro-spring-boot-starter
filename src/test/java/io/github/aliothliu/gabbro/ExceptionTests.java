@@ -23,7 +23,7 @@ class ExceptionTests {
 
     @Test
     void testOrderNotFound(@Autowired MockMvc mvc) throws Exception {
-        mvc.perform(get("/order")).andExpect(status().is(400)).andExpect(content().string("{\"status\":\"fail\",\"code\":400,\"message\":\"Can't find order by [1]\",\"data\":{}}"));
+        mvc.perform(get("/order")).andExpect(status().is(400)).andExpect(content().string("{\"status\":\"fail\",\"code\":40002001,\"message\":\"Can't find order by [1]\",\"data\":{}}"));
     }
 
     @Test

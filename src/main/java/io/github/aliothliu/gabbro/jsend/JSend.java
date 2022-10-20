@@ -17,7 +17,7 @@ import static io.github.aliothliu.gabbro.jsend.JSendStatus.*;
 public class JSend {
 
     private final JSendStatus status;
-    private final Integer code;
+    private final Long code;
     private final String message;
     private final Object data;
 
@@ -29,7 +29,7 @@ public class JSend {
      * @param message 错误消息文本
      * @param data    响应内容
      */
-    public JSend(JSendStatus status, Integer code, String message, Object data) {
+    public JSend(JSendStatus status, Long code, String message, Object data) {
         Assert.notNull(status, "JSend status should not be null");
 
         this.status = status;
@@ -46,7 +46,7 @@ public class JSend {
      * @see JSendStatus#success
      */
     public static JSend success(Object data) {
-        return new JSend(success, 200, null, data);
+        return new JSend(success, 200L, null, data);
     }
 
     /**
@@ -68,7 +68,7 @@ public class JSend {
      * @return JSend
      * @see JSendStatus#error
      */
-    public static JSend error(Integer code, String message, Object data) {
+    public static JSend error(Long code, String message, Object data) {
         return new JSend(error, code, message, data);
     }
 
@@ -103,7 +103,7 @@ public class JSend {
      * @return JSend
      * @see JSendStatus#fail
      */
-    public static JSend fail(Integer code, String message, Object data) {
+    public static JSend fail(Long code, String message, Object data) {
         return new JSend(fail, code, message, data);
     }
 
@@ -111,7 +111,7 @@ public class JSend {
         return status;
     }
 
-    public Integer getCode() {
+    public Long getCode() {
         return code;
     }
 
